@@ -20,38 +20,38 @@
         
         <div class="keyboard-container">
             <div class="keyboard-row">
-                <button class="key" data-key="Q">Q</button>
-                <button class="key" data-key="W">W</button>
-                <button class="key" data-key="E">E</button>
-                <button class="key" data-key="R">R</button>
-                <button class="key" data-key="T">T</button>
-                <button class="key" data-key="Y">Y</button>
-                <button class="key" data-key="U">U</button>
-                <button class="key" data-key="I">I</button>
-                <button class="key" data-key="O">O</button>
-                <button class="key" data-key="P">P</button>
+                <button type="button" class="key" data-key="Q">Q</button>
+                <button type="button" class="key" data-key="W">W</button>
+                <button type="button" class="key" data-key="E">E</button>
+                <button type="button" class="key" data-key="R">R</button>
+                <button type="button" class="key" data-key="T">T</button>
+                <button type="button" class="key" data-key="Y">Y</button>
+                <button type="button" class="key" data-key="U">U</button>
+                <button type="button" class="key" data-key="I">I</button>
+                <button type="button" class="key" data-key="O">O</button>
+                <button type="button" class="key" data-key="P">P</button>
             </div>
             <div class="keyboard-row">
-                <button class="key" data-key="A">A</button>
-                <button class="key" data-key="S">S</button>
-                <button class="key" data-key="D">D</button>
-                <button class="key" data-key="F">F</button>
-                <button class="key" data-key="G">G</button>
-                <button class="key" data-key="H">H</button>
-                <button class="key" data-key="J">J</button>
-                <button class="key" data-key="K">K</button>
-                <button class="key" data-key="L">L</button>
+                <button type="button" class="key" data-key="A">A</button>
+                <button type="button" class="key" data-key="S">S</button>
+                <button type="button" class="key" data-key="D">D</button>
+                <button type="button" class="key" data-key="F">F</button>
+                <button type="button" class="key" data-key="G">G</button>
+                <button type="button" class="key" data-key="H">H</button>
+                <button type="button" class="key" data-key="J">J</button>
+                <button type="button" class="key" data-key="K">K</button>
+                <button type="button" class="key" data-key="L">L</button>
             </div>
             <div class="keyboard-row">
-                <button class="key key-wide" data-key="ENTER">ENTER</button>
-                <button class="key" data-key="Z">Z</button>
-                <button class="key" data-key="X">X</button>
-                <button class="key" data-key="C">C</button>
-                <button class="key" data-key="V">V</button>
-                <button class="key" data-key="B">B</button>
-                <button class="key" data-key="N">N</button>
-                <button class="key" data-key="M">M</button>
-                <button class="key key-wide" data-key="BACKSPACE">⌫</button>
+                <button type="button" class="key key-wide" data-key="ENTER">ENTER</button>
+                <button type="button" class="key" data-key="Z">Z</button>
+                <button type="button" class="key" data-key="X">X</button>
+                <button type="button" class="key" data-key="C">C</button>
+                <button type="button" class="key" data-key="V">V</button>
+                <button type="button" class="key" data-key="B">B</button>
+                <button type="button" class="key" data-key="N">N</button>
+                <button type="button" class="key" data-key="M">M</button>
+                <button type="button" class="key key-wide" data-key="BACKSPACE">⌫</button>
             </div>
         </div>
     </div>
@@ -74,23 +74,8 @@
             gameBoard.appendChild(rowDiv);
         }
         
-        // Keyboard functionality
-        const keys = document.querySelectorAll('.key');
-        keys.forEach(key => {
-            key.addEventListener('click', () => {
-                const keyValue = key.getAttribute('data-key');
-                if (keyValue === 'ENTER') {
-                    // Handle enter
-                    console.log('Enter pressed');
-                } else if (keyValue === 'BACKSPACE') {
-                    // Handle backspace
-                    console.log('Backspace pressed');
-                } else {
-                    // Handle letter
-                    console.log('Letter pressed:', keyValue);
-                }
-            });
-        });
     </script>
+    <script src="words.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
